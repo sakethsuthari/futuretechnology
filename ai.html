@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Logo.png"
+        type="image/png" />
+    <style>
+        header ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: black;
+            margin: -5px;
+            margin-top: 5px;
+            list-style: none;
+            border: solid 2px grey;
+            width: 97%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        header li {
+            float: left;
+            align-items: center;
+            background-color: black;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li a:hover {
+            background-color: #555555;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-weight: 600;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Button {
+            background-color: none;
+            border: none;
+            color: black;
+            height: 20px;
+            width: 10%;
+            border-radius: 72px;
+            margin: 10px;
+            border-color: blue;
+            border-width: 5px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn {
+            display: block;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 287px;
+            margin-top: 51.5px;
+            box-shadow: 0px 8px 16px 0px black;
+            z-index: 1;
+            margin-left: 210.7px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content a:hover {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+
+        .drpdn:hover .drpdn-content {
+            display: block;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn:hover .dropbtn {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .col-sm-4 {
+            width: 40%;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .col-sm-6 {
+            width: 60%;
+            float: right;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .img-thumbnail {
+            border-radius: 2px;
+            width: 25%;
+            height: 10%;
+            border: solid 3px white;
+            margin: 0.5;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Image {
+            transition: transform .2s;
+            width: 500px;
+        }
+
+        .Images {
+            margin-top: 200px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        hr {
+            width: 100%;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Image:hover {
+            transform: scale(0.92);
+            /*---------------------SECTION_BREAK---------------------*/
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 17%;
+            overflow-x: hidden;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            border-right: 2px solid grey;
+            border-top: 2px solid grey;
+            border-bottom: 2px solid grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .sidenav a {
+            padding: 12px 8px 12px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            font-weight: 900;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .sidenav a:hover {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark {
+            padding: 5px;
+            background-color: #3d3936;
+            color: white;
+            border-bottom: solid 1px #737373;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark th {
+            padding-right: 50px;
+            border-bottom: solid 1px #737373;
+        }
+
+        /*--------------------SECTION_BREAK---------------------*/
+        .table-dark thead {
+            border-bottom: solid 1px #737373;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark td {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .np {
+            font-family: 'Courier New', Courier;
+            color: rgb(255, 136, 0);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li:hover {
+            transform: scale(1.1);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        p {
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        a {
+            text-decoration: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myimage {
+            float: left;
+            width: 350px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myimage:hover {
+            transform: scale(0.92);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myclass {
+            width: 30%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .myclass2 {
+            width: 60%;
+            font-size: 23.25px;
+            transform: scale(1);
+        }
+
+        img.i {
+            width: 379px;
+            /*height: 199px;*/
+            float: right;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">EXTENDED REALITY</a>
+            </li>
+            <div class="drpdn">
+                <li style="border-right: 2px solid grey;"><a
+                        href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html">ARTIFICIAL
+                        INTELLIGENCE&nbsp;</a></li>
+
+                <div class="drpdn-content">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#VO_AS"
+                        style="border: 2px solid grey;margin-bottom: 2px;">VOICE ASSISTANT</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HU_RO"
+                        style="border: 2px solid grey;margin-bottom: 2px;">HUMANOID ROBOTS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HO_CH"
+                        style="border: 2px solid grey;margin-bottom: 2px;">
+                        HOLOGRAM CHATS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#AU_PI"
+                        style="border: 2px solid grey;margin-bottom: 2px;">AUTO-PILOTS</a>
+                </div>
+            </div>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">SECURITY
+                    SYSTEMS</a></li>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">PROJECTED TOUCH</a>
+            </li>
+            <li><a href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">WBE/MIND-UPLOADING</a></li>
+            <img style="position:absolute; top:32px; left:525.5px; width: 10px;height: 8px; "
+                src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/drpdwn.png">
+
+
+        </ul>
+        <a href="https://tatvaglobalschool.github.io/technologyofthefuture/index.html">
+            <span>
+                <p
+                    style="padding: 16px;background-color: black;color: white;border: 2px solid grey;background-attachment: fixed;width: 9.8%;float: right;font-size: medium;">
+                    BACK TO HOME</p>
+            </span>
+        </a>
+
+
+    </header>
+    <section>
+        <div class="container">
+            <span><u>
+                    <h1 style="margin-left: 400px;" class="myai">Artificial Intelligence</h1>
+                </u></span>
+            <span>
+                <h2 id="VO_AS">1. Voice Assistants - What Is It?</h2>
+            </span>
+
+            <span class="myclass">
+
+                <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                        src="https://cdn.majorel.com/wp-content/uploads/2018/03/01140319/Voice-Assistants-im-Kundenservice.jpg"
+                        width="338px" style="margin-top: 27px;">
+
+                    <p>Voice Assistant has made our lives a lot easier. A Voice Assistant can also be called as an
+                        intelligent assistant. An intelligent personal assistant can help someone with basic tasks. They
+                        often understand natural language and can help
+                    </p>
+                </span>
+        </div>
+        </main>
+        </span>
+        <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+            <p> with things like calling people, creating meeting requests, reporting a sports score, and sharing the
+                weather forecast.
+                Intelligent
+                personal assistants have access to a large amount of information on a device or online, which enables
+                them
+                to perform
+                simple tasks.The long-term vision for voice assistants is to act as a smart bridge between humans and
+                the
+                vast knowledge and
+                capacities which the internet delivers. Taking away the need to use any device or screen to interact
+                with
+                the internet,
+                technology or other humans in different locations. </p>
+        </span>
+        <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+            <p>It saves a lot of time, as we are able to browse everything with our voices only, while doing some other
+                work
+                at the same time, making us multitaskers. The most popular Voice assistants are Google Echo, Amazon
+                Alexa,
+                Microsoft Cortana, Apple Siri </p>
+            <img src="https://tatvaglobalschool.github.io/technologyofthefuture/conv.png" width="380px" height="200px">
+        </span>
+        <hr>
+    </section>
+
+    <hr>
+    <section>
+        <div class="container">
+            <span><u>
+                    <h1 style="margin-left: 400px;" class="myai">Artificial Intelligence</h1>
+                </u></span>
+            <span>
+                <h2 id="HO_CH">1. Hologram Chat - What Is It?</h2>
+            </span>
+
+            <span class="myclass">
+
+                <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                        src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_736/https://www.livechat.com/wp-content/uploads/2017/04/live-chat-in-the-future-hologram@2x.png"
+                        width="338px" height="193px" style="margin-top: 27px;">
+
+                    <p>Holographic telepresence is an evolving technology for full-motion, three-dimensional (3D) video
+                        conferencing.Holographic telepresence systems can project realistic, full-motion, real-time 3D
+                        images of distant people and objects
+                        into a room,
+
+                    </p>
+                </span>
+        </div>
+        </main>
+        </span>
+        <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+            <p> along with real-time audio communication, with a level of realism rivaling physical presence.In
+                telemedicine, for
+                example, telepresence can allow medical professionals to advise and assist colleagues thousands of
+                miles away in real time. The technology can also reduce the necessity of travel for business meetings
+                and facilitate
+                distance education. Other potential applications include enhanced movies and television programming,
+                advertising,
+                gaming, 3D mapping, aerospace navigation, robot control, and various other forms of simulation. </p>
+        </span>
+        <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+            <img src="https://miro.medium.com/max/1584/1*SFfLnnQ_VpawRgiKCfedxg.jpeg" width="310px" alt=""> </span>
+        <hr>
+    </section>
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <section>
+            <div class="container">
+                <span><u>
+                        <h1 style="margin-left: 400px;" class="myai">Artificial Intelligence</h1>
+                    </u></span>
+                <span>
+                    <h2 id="HU_RO">1. Humanoid Robots - What Is It?</h2>
+                </span>
+
+                <span class="myclass">
+
+                    <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                            src="https://i.ytimg.com/vi/FRs7avY_aW8/maxresdefault.jpg" width="338px" height="193px"
+                            style="margin-top: 27px;">
+
+                        <p>Robots are very active and can work tirelessly for decades without a single error.
+                            Humanoid robots are professional service robots built to mimic human motion and interaction.
+                            Like all service robots,
+                            they provide value by
+
+                        </p>
+                    </span>
+            </div>
+            </main>
+            </span>
+            <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+                <p> automating tasks in a way that leads to cost-savings and productivity. Humanoid robots are a
+                    relatively new form of professional service robot.Robots are widely used in such industries as
+                    automobile manufacture to perform simple repetitive tasks, and in
+                    industries where work must be performed in environments hazardous to humans. .Sophia is a social
+                    humanoid robot developed by Hong Kong-based company Hanson Robotics.Humanoid robots are staffing a
+                    hospital in Wuhan, China, helping medics to disinfect, measure temperatures, deliver food
+                    and medicine etc.</p>
+            </span>
+            <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+                <p>Robots are delivering everything from online orders to room service.Medical facilities including the
+                    famed Mayo Clinic use robotics to operate on patients. Using robotics provides “more
+                    precision, flexibility, and control than is possible with conventional techniques.”</p>
+                <img src="https://miro.medium.com/max/2205/1*PJXlQIts3GgzBZYty8ljbQ.jpeg" width="380px" height="200px">
+            </span>
+            <hr>
+        </section>
+        <hr>
+        <section>
+            <div class="container">
+                <span><u>
+                        <h1 style="margin-left: 400px;" class="myai">Artificial Intelligence</h1>
+                    </u></span>
+                <span>
+                    <h2 id="AU_PI">1. Auto-Pilot - What Is It?</h2>
+                </span>
+
+                <span class="myclass">
+
+                    <span style="margin-top: 0px;  font-size: 22.25px;"><img src="https://i.stack.imgur.com/iMSGf.jpg"
+                            width="338px" height="193px" style="margin-top: 27px;">
+
+                        <p>An autopilot is a device used to guide an aircraft without direct assistance from the pilot.
+                            Early autopilots were only
+                            able to maintain a constant heading and altitude, but modern autopilots are capable of
+                            controlling every part of the
+                        </p>
+                    </span>
+            </div>
+            </main>
+            </span>
+            <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+                <p> flight envelope from just after take-off to landing.The autopilot system relies on a series of
+                    sensors around the aircraft that pick up information like speed, altitude and
+                    turbulence. That data are ingested into the computer, which then makes the necessary changes.
+                    Basically, it can do
+                    almost everything a pilot can do. Key phrase: almost everything.
+                    Before takeoff, the pilot will enter the route into the computer, giving it a start and end position
+                    and exactly how to
+                    get there. Throughout that route there are a series of points that the computer will note, each
+                </p>
+            </span>
+            <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+                <p>having its own speed and
+                    altitude.
+                    The autopilot does not steer the airplane on the ground or taxi the plane at the gate. Generally,
+                    the pilot will handle
+                    takeoff and then initiate the autopilot to take over for most of the flight. In some newer aircraft
+                    models, autopilot
+                    systems will even land the plane. </p>
+                <img src="https://www.aircraftcompare.com/wp-content/uploads/2020/06/HB-VSA-Pilatus-PC-24-Cockpit-931x500.jpg"
+                    width="380px" height="200px">
+            </span>
+            <hr>
+        </section>
+        <hr>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Reality</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Logo.png"
+        type="image/png" />
+    
+    <style>
+        header ul 
+{
+list-style-type: none;
+overflow: hidden;
+background-color: black;
+margin: -5px;
+margin-top:5px;
+list-style: none;
+border: solid 2px  grey;
+width: 97%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*---------------------SECTION_BREAK---------------------*/
+header li 
+{
+float: left;
+align-items: center;
+background-color: black;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a 
+{
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a:hover 
+{
+background-color: #555555;
+cursor: pointer;
+}
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-weight: 600;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Button
+{
+background-color: none;
+border: none;
+color: black;
+height: 20px;
+width: 10%;
+border-radius: 72px;
+margin: 10px;
+border-color: blue;
+border-width: 5px;}
+button:hover{
+background-color: blue;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.dropbtn 
+{
+background-color: black;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn 
+{
+  display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content 
+{
+display: none;
+position: absolute;
+background-color: black;
+min-width: 287px;
+margin-top: 51.5px;
+box-shadow: 0px 8px 16px 0px black;
+z-index: 1;
+margin-left: 210.7px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a 
+{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+
+.drpdn:hover .drpdn-content 
+{
+display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn:hover .dropbtn 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-4
+{
+width: 40%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-6
+{
+width: 60%;
+float: right;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.container
+{
+margin-left: 50px;
+margin-right: 50px;
+padding-left: 10px;
+padding-right: 10px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.img-thumbnail
+{
+border-radius: 2px;
+width: 25%;
+height: 10%;
+border: solid 3px white;
+margin: 0.5;  
+}
+/*---------------------SECTION_BREAK---------------------*/  
+.Image
+{
+transition: transform .2s;
+width: 500px;
+}
+.Images
+{
+margin-top:200px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+hr
+{
+width: 100%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Image:hover
+{
+transform: scale(0.92);
+/*---------------------SECTION_BREAK---------------------*/
+}
+.sidenav 
+{
+height: 100%;
+width: 17%;
+overflow-x: hidden;
+background-color: black;
+font-family: 'Times New Roman', Times, serif, sans-serif;
+border-right: 2px solid grey;
+border-top: 2px solid grey ;
+border-bottom: 2px solid grey;     
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a 
+{
+padding: 12px 8px 12px 16px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+display: block;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+font-weight: 900;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark
+{
+padding: 5px;
+background-color: #3d3936;
+color: white;
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark th
+{
+padding-right: 50px;
+border-bottom: solid 1px #737373;
+}/*--------------------SECTION_BREAK---------------------*/
+.table-dark thead
+{
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark td
+{
+padding-left: 15px;
+padding-right: 15px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.np 
+{
+  font-family: 'Courier New', Courier;
+  color: rgb(255, 136, 0);
+}
+/*---------------------SECTION_BREAK---------------------*/
+li:hover
+{
+  transform: scale(1.1);
+}
+/*---------------------SECTION_BREAK---------------------*/
+p
+{
+  color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+a
+{
+  text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage
+{
+float:left;
+width: 350px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage:hover
+{
+transform: scale(0.92);
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myclass{
+width: 30%;
+float: left;
+margin-right: 20px;
+}
+html
+{
+scroll-behavior: smooth;
+}
+.myclass2
+{
+width: 60%;
+font-size: 23.25px;
+transform: scale(1);
+}
+
+img.i{
+  width: 379px;
+  /*height: 199px;*/
+  float: right;
+}
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <img style="position:absolute; top:768px; right:63px;"
+            src="https://www.shoppimon.com/wp-content/uploads/2018/04/rendered.jpg" class="i">
+        <img style="position:absolute; top:1103px; right:63px;"
+            src="https://cdn.redshift.autodesk.com/2017/08/AR-VR-HumansMachinesUnite_Header.jpg" class="i">
+        <img style="position:absolute; top:1383px; right:63px;"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSInZVc8skTAiPGgiXy8cx3VZSZa_sk4Xh_0HD9vO0Qu-LajZVlrNyjQBLsaDFkMeYW-3k&usqp=CAU"
+            class="i">
+        <img style="position:absolute; top:1710px; right:63px;"
+            src="https://arpost.co/wp-content/uploads/2018/10/arvr-tech-transforming-manufacturing-industry.png"
+            class="i">
+        <img style="position:absolute; top:2084px; right:63px;"
+            src="https://www.4dpixel.eu/wp-content/uploads/2019/01/vr-technology.jpg" class="i">
+        <img style="position:absolute; top:2410px; right:63px;"
+            src="https://tutorialslink.com/Article_img/Blog_image/9d12cd65-abbf-44ff-b5ce-434048b0ac00.png" class="i">
+        <img style="position:absolute; top:2930px; right:63px;"
+            src="https://cdn.geekwire.com/wp-content/uploads/2020/03/200303-medical.jpg" class="i">
+
+
+        <ul>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">EXTENDED REALITY</a></li>
+            <div class="drpdn">
+                <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html">ARTIFICIAL INTELLIGENCE&nbsp;</a></li>
+
+                <div class="drpdn-content">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#VO_AS" style="border: 2px solid grey;margin-bottom: 2px;">VOICE ASSISTANT</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HU_RO" style="border: 2px solid grey;margin-bottom: 2px;">HUMANOID ROBOTS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HO_CH" style="border: 2px solid grey;margin-bottom: 2px;">
+                        HOLOGRAM CHATS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#AU_PI" style="border: 2px solid grey;margin-bottom: 2px;">AUTO-PILOTS</a>
+                </div>
+            </div>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">SECURITY SYSTEMS</a></li>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">PROJECTED TOUCH</a></li>
+            <li style="transform: scale(1);"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">WBE/MIND-UPLOADING</a></li>
+            <img style="position:absolute; top:32px; left:525.5px; width: 10px;height: 8px; "
+                src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/drpdwn.png">
+
+        </ul>
+        <a href="https://tatvaglobalschool.github.io/technologyofthefuture/index.html">
+            <p
+                style="padding: 16px;background-color: black;color: white;border: 2px solid grey;background-attachment: fixed;width: 9.8%;float: right;font-size: medium;">
+                BACK TO HOME</p>
+        </a>
+
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <span><u>
+                        <h1 style="margin-left: 400px;" class="myai">Extended Reality</h1>
+                    </u></span>
+                <span>
+                    <h2>Augmented Reality(AR) and Virtual Reality(VR)</h2>
+                </span>
+
+                <span class="myclass">
+
+                    <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                            src="https://ciotechie.com/wp-content/uploads/2019/04/Predictions_For-Augmented-And-Virtual-Reality-In-Healthcare-Market-by-2025.png"
+                            width="338px" height="195px" style="margin-top: 27px;">
+
+                        <p>Extended Reality is an all-encompassing term that includes augmented reality and virtual
+                            reality. Augmented reality is a technology that lets people
+                            superimpose digital content over real-life scenes, environments.VR is a computer generated
+                            simulation of an</p>
+                    </span>
+            </div>
+    </main>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p>alternate world or reality. It
+            is used in 3D movies and
+            video games. Augmented reality applications have spanned commercial industries such as education,
+            communications, medicine, and
+            entertainment. VR is used in all branches of service: the army, navy, air force, marines and coast guard.
+            Due to its interactive nature, medical and dental students have begun using VR to practice surgeries and
+            procedures,
+            allowing for a consequence free learning environment. The risk of inflicting harm on on real patients is
+            eliminated. Using VR technology in the medical industry is an</p>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p>way to improve the quality of
+            students in training. </p>
+        <video width="320" height="375" controls loop autoplay>
+            <source src="https://tatvaglobalschool.github.io/technologyofthefuture/AR.mp4" type="video/mp4">
+        </video>
+    </span>
+    <hr>
+    </section>
+    <div class="container">
+
+        <section class="myclass2">
+            <h2>Advantages of Augmented Reality (AR)</h2>
+            <p>Here, are pros/benefits of augmented reality</p>
+            <ul>
+                <li style="transform: scale(1);">Offers individualized learning</li>
+                <li style="transform: scale(1);">Fostering the learning process</li>
+                <li style="transform: scale(1);">Wide variety of fields</li>
+                <li style="transform: scale(1);">Offers innovation and continuous improvement</li>
+                <li style="transform: scale(1);">Increase accuracy</li>
+                <li style="transform: scale(1);">Augmented reality can be used to increase user knowledge and
+                    information.
+                </li>
+                <li style="transform: scale(1);">People can share experiences over long distances.</li>
+                <li style="transform: scale(1);">Helps developers to build games that offer "real" experience to the
+                    user.
+                </li>
+            </ul>
+            <h2>Advantages of Virtual Reality (VR)</h2>
+            <p>Here, are pros/benefits of virtual reality:</p>
+            <ul>
+                <li style="transform: scale(1);">Immersive learning</li>
+                <li style="transform: scale(1);">Create an interactive environment</li>
+                <li style="transform: scale(1);">Increase work capabilities</li>
+                <li style="transform: scale(1);">Offer convenience</li>
+                <li style="transform: scale(1);">One of the most important advantages of VR is that it helps you to
+                    create a
+                    realistic world so that the user can
+                    explore the world.</li>
+                <li style="transform: scale(1);">Virtual reality in the education field makes education more easy and
+                    comfortable.</li>
+                <li style="transform: scale(1);">Virtual reality allows users to experiment with an artificial
+                    environment.
+                </li>
+            </ul>
+            <h2>Disadvantage of Augmented Reality</h2>
+            <p>Here, are cons/drawback of Augmented Reality</p>
+            <ul>
+                <li style="transform: scale(1);">It is very expensive to implement and develop AR technology-based
+                    projects
+                    and to maintain it.</li>
+                <li style="transform: scale(1);">Lack of privacy is a major drawback of AR.</li>
+                <li style="transform: scale(1);">The low-performance level of AR devices is a major drawback that can
+                    arise
+                    during the testing phase.</li>
+                <li style="transform: scale(1);">Augmented reality can cause mental health issues.</li>
+                <li style="transform: scale(1);">Lack of security may affect the overall augmented reality principle.
+                </li>
+                <li style="transform: scale(1);">Extreme engagement with AR technology can lead to major healthcare
+                    issues
+                    such as eye problems and obesity etc.
+                </li style="transform: scale(1);">
+            </ul>
+            <h2>Disadvantages of Virtual Reality</h2>
+            <p>Here, are cons/drawbacks of virtual reality</p>
+            <ul>
+                <li style="transform: scale(1);">VR is becoming much more common, but programmers will never be able to
+                    interact with virtual environments.</li>
+                <li style="transform: scale(1);">The escapism is commonplace among those that use VR environments, and
+                    people start living in the virtual world
+                    instead of dealing with real-world issues.</li>
+                <li style="transform: scale(1);">Training with a VR environment never has the same result as training
+                    and
+                    working in the real world. This means
+                    if somebody has done well with simulated tasks in a VR environment, there is still no guarantee that
+                    a
+                    person is
+                    doing well in the real world.</li>
+            </ul>
+        </section>
+    </div>
+    <section class="myclass2">
+
+        <div class="container">
+            <h2><strong>HOW DOES IT WORK?</strong></h2>
+            <h3><strong>AR:</strong></h3>
+            <ol>
+                <li style="transform: scale(1);"><span>AR uses computer vision, mapping as well as
+                        depth
+                        tracking in order to show appropriate content to the user. This functionality allows cameras to
+                        collect, send, and process data to show digital content appropriate to what any user is looking
+                        at.</span></li>
+                <li style="transform: scale(1);"><span>In Augmented reality, the user's physical
+                        environment is enhanced with contextually relevant digital content in real-time. You can
+                        experience (AR) augmented reality with a smartphone or with special hardware.</span></li>
+            </ol>
+            <h3><strong>VR:</strong></h3>
+            <ol>
+                <li style="transform: scale(1);"><span>In VR, two lenses are placed between the
+                        screen.
+                        Users need to adjust eyes based on individual movement of the eye and it's positioning. The
+                        visuals on the screen can be rendered by using a HDMI cable connected to PC or mobile
+                        phone.</span></li>
+            </ol>
+
+        </div>
+    </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<p></p>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Systems</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Logo.png"
+        type="image/png" />
+
+    <style>
+        header ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: black;
+            margin: -5px;
+            margin-top: 5px;
+            list-style: none;
+            border: solid 2px grey;
+            width: 97%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        header li {
+            float: left;
+            align-items: center;
+            background-color: black;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li a:hover {
+            background-color: #555555;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-weight: 600;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Button {
+            background-color: none;
+            border: none;
+            color: black;
+            height: 20px;
+            width: 10%;
+            border-radius: 72px;
+            margin: 10px;
+            border-color: blue;
+            border-width: 5px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn {
+            display: block;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 287px;
+            margin-top: 51.5px;
+            box-shadow: 0px 8px 16px 0px black;
+            z-index: 1;
+            margin-left: 210.7px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn-content a:hover {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+
+        .drpdn:hover .drpdn-content {
+            display: block;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .drpdn:hover .dropbtn {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .col-sm-4 {
+            width: 40%;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .col-sm-6 {
+            width: 60%;
+            float: right;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .img-thumbnail {
+            border-radius: 2px;
+            width: 25%;
+            height: 10%;
+            border: solid 3px white;
+            margin: 0.5;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Image {
+            transition: transform .2s;
+            width: 500px;
+        }
+
+        .Images {
+            margin-top: 200px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        hr {
+            width: 100%;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .Image:hover {
+            transform: scale(0.92);
+            /*---------------------SECTION_BREAK---------------------*/
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 17%;
+            overflow-x: hidden;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            border-right: 2px solid grey;
+            border-top: 2px solid grey;
+            border-bottom: 2px solid grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .sidenav a {
+            padding: 12px 8px 12px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            font-weight: 900;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .sidenav a:hover {
+            background-color: grey;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark {
+            padding: 5px;
+            background-color: #3d3936;
+            color: white;
+            border-bottom: solid 1px #737373;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark th {
+            padding-right: 50px;
+            border-bottom: solid 1px #737373;
+        }
+
+        /*--------------------SECTION_BREAK---------------------*/
+        .table-dark thead {
+            border-bottom: solid 1px #737373;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .table-dark td {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .np {
+            font-family: 'Courier New', Courier;
+            color: rgb(255, 136, 0);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        li:hover {
+            transform: scale(1.1);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        p {
+            color: white;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        a {
+            text-decoration: none;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myimage {
+            float: left;
+            width: 350px;
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myimage:hover {
+            transform: scale(0.92);
+        }
+
+        /*---------------------SECTION_BREAK---------------------*/
+        .myclass {
+            width: 30%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .myclass2 {
+            width: 60%;
+            font-size: 23.25px;
+            transform: scale(1);
+        }
+
+        img.i {
+            width: 379px;
+            /*height: 199px;*/
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img style="position:absolute; top:768px; right:63px;"
+            src="https://www.renesas.com/sites/default/files/styles/content_large/public/media/images/security-system.jpg?itok=u4DWWKlD"
+            class="i">
+        <img style="position:absolute; top:1256px; right:63px;"
+            src="https://profiles.sulekha.com/mstore/33516924/albums/default/thumbnailfull/homeimprovement-sulekha-blogs.jpg"
+            class="i">
+
+        <img style="position:absolute; top:1601px; right:63px;"
+            src="https://pom-tec.com/wp-content/uploads/2019/10/security-updates.jpg" class="i">
+        <img style="position:absolute; top:1955px; right:63px;"
+            src="https://vaalweekblad.com/wp-content/uploads/sites/119/2020/05/home-security.jpg" class="i">
+
+
+
+
+
+
+        <ul>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">EXTENDED REALITY</a>
+            </li>
+            <div class="drpdn">
+                <li style="border-right: 2px solid grey;"><a
+                        href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html">ARTIFICIAL
+                        INTELLIGENCE&nbsp;</a></li>
+
+                <div class="drpdn-content">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#VO_AS"
+                        style="border: 2px solid grey;margin-bottom: 2px;">VOICE ASSISTANT</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HU_RO"
+                        style="border: 2px solid grey;margin-bottom: 2px;">HUMANOID ROBOTS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HO_CH"
+                        style="border: 2px solid grey;margin-bottom: 2px;">
+                        HOLOGRAM CHATS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#AU_PI"
+                        style="border: 2px solid grey;margin-bottom: 2px;">AUTO-PILOTS</a>
+                </div>
+            </div>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">SECURITY
+                    SYSTEMS</a></li>
+            <li style="border-right: 2px solid grey;"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">PROJECTED TOUCH</a>
+            </li>
+            <li style="transform: scale(1);"><a
+                    href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">WBE/MIND-UPLOADING</a>
+            </li>
+            <img style="position:absolute; top:32px; left:525.5px; width: 10px;height: 8px; "
+                src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/drpdwn.png">
+
+        </ul>
+        <a href="https://tatvaglobalschool.github.io/technologyofthefuture/index.html">
+            <p
+                style="padding: 16px;background-color: black;color: white;border: 2px solid grey;background-attachment: fixed;width: 9.8%;float: right;font-size: medium;">
+                BACK TO HOME</p>
+        </a>
+
+
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <span><u>
+                        <h1 style="margin-left: 400px;" class="myai">Security Systems</h1>
+                    </u></span>
+                <span>
+                    <h2>1. Security System - What Is It?</h2>
+                </span>
+
+                <span class="myclass">
+
+                    <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                            src="https://roboticsandautomationnews.com/wp-content/uploads/2020/07/home-security-system-copy.jpg"
+                            width="338px" height="195px" style="margin-top: 27px;">
+
+                        <p>A Security System is a system designed to detect or prevent intrusion and unauthorized entry
+                            into our houses. They are built in such a way that we are able to have a full control over
+
+                        </p>
+                    </span>
+            </div>
+    </main>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p> the house. We can close and open doors, or windows, turn on/off, lights,
+            fans or
+            apliances, and make robot fight off the burglar. spray detergents, cleaners, vaccum clean/the house and what
+            not! And
+            One Interesting Thing is all of this can be done even when we are in travelling, in an other place or city.
+            It is
+            impossible for any burglar to beat the
+            mordern security systems. It makes our life easier and safer. We’re alerted whenever anyone enters and
+            exits the home. This is especially good when you have
+        </p>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p>small children in the
+            home, because it helps to know whenever the doors in your home are opened or closed. An example of an
+            Advanced Security System is Angee which is the best system to date.
+        </p>
+        <img src="https://image.freepik.com/free-vector/security-systems-isometric-flowchart-with-surveillance-cameras-laser-sensors-indoor-cctv-electronic-locks-alarm-burglar_1284-28967.jpg"
+            width="380px" height="200px">
+    </span>
+    <hr>
+    <div class="container">
+        </section>
+        <section class="myclass2">
+            <h2><strong>Advanced Security Systems:-</strong></h2>
+            <h2>&nbsp;</h2>
+            <h3><strong>Pros:-&nbsp;</strong></h3>
+            <ul>
+                <li style="transform: scale(1);"><span>Helps to prevent Burglaries and Break-ins by robbers.
+                        Due to a weak security system there is a higher chance of burglaries, theft crime.&nbsp;</span>
+                </li>
+                <li style="transform: scale(1);"><span>It avoids lockout situations. Since modern locking
+                        systems do not require a pair of keys and cards for locking mechanism, thus it avoids lockout
+                        situations..</span></li>
+                <li style="transform: scale(1);"><span>The alarm itself often frightens away
+                        burglars.&nbsp;&nbsp;</span></li>
+                <li style="transform: scale(1);"><span>We&rsquo;re alerted whenever anyone enters and exits
+                        the home.&nbsp; This is especially good when you have small children in the home, because it
+                        helps to know
+                        whenever the doors in your home are opened or closed.</span></li>
+            </ul>
+            <p>&nbsp;</p>
+            <h3><strong>Cons:-&nbsp;</strong></h3>
+            <ul>
+                <li style="transform: scale(1);"><span>You can get a false sense of security, since some
+                        burglars will still enter the home with an alarm on. Not all burglars will be scared away.&nbsp;
+                        There are
+                        professional criminals who know how to get in, grab what they want, and get out before the
+                        police ever
+                        arrive.</span></li>
+                <li style="transform: scale(1);"><span>Your local police department will charge you for
+                        &ldquo;false alarms.&rdquo;&nbsp; Any time they come out to your home to find no burglar there
+                        and no
+                        obvious signs of forced entry, it will be considered a false alarm.&nbsp; So basically, you can
+                        be fined if
+                        your security alarm was successful in scaring the intruder away.</span></li>
+            </ul>
+            <p>&nbsp;</p>
+    </div>
+    </section>
+    <section class="myclass2">
+
+        <div class="container">
+            <h2><span>Security System:</span></h2>
+            <ol>
+                <li style="transform: scale(1);"><span>The sensors are typically placed in doors that
+                        lead to and from a house as well as easily accessible windows. Open spaces inside of homes can
+                        be secured with motion sensors.</span></li>
+                <li style="transform: scale(1);"><span>Control Panel: The control panel is the
+                        computer
+                        that arms and disarms the security systems. They typically feature a touchpad for easy
+                        programming and interaction.</span></li>
+                <li style="transform: scale(1);"><span>Motion Sensors: These security components,
+                        when
+                        armed, protect a given space by creating an invisible zone that cannot be breached without
+                        sounding an alarm. These are typically used to protect rooms containing valuables, as well as
+                        areas less frequented in larger homes.</span></li>
+            </ol>
+        </div>
+    </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

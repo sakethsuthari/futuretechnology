@@ -1,0 +1,455 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Logo.png"
+        type="image/png" />
+    <title>Technology of the Future</title>
+    
+    <style>
+        header ul 
+{
+list-style-type: none;
+overflow: hidden;
+background-color: black;
+margin: -5px;
+margin-top:5px;
+list-style: none;
+border: solid 2px  grey;
+width: 97%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*---------------------SECTION_BREAK---------------------*/
+header li 
+{
+float: left;
+align-items: center;
+background-color: black;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a 
+{
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a:hover 
+{
+background-color: #555555;
+cursor: pointer;
+}
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-weight: 600;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Button
+{
+background-color: none;
+border: none;
+color: black;
+height: 20px;
+width: 10%;
+border-radius: 72px;
+margin: 10px;
+border-color: blue;
+border-width: 5px;}
+button:hover{
+background-color: blue;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.dropbtn 
+{
+background-color: black;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn 
+{
+  display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content 
+{
+display: none;
+position: absolute;
+background-color: black;
+min-width: 287px;
+margin-top: 51.5px;
+box-shadow: 0px 8px 16px 0px black;
+z-index: 1;
+margin-left: 210.7px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a 
+{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+
+.drpdn:hover .drpdn-content 
+{
+display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn:hover .dropbtn 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-4
+{
+width: 40%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-6
+{
+width: 60%;
+float: right;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.container
+{
+margin-left: 50px;
+margin-right: 50px;
+padding-left: 10px;
+padding-right: 10px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.img-thumbnail
+{
+border-radius: 2px;
+width: 25%;
+height: 10%;
+border: solid 3px white;
+margin: 0.5;  
+}
+/*---------------------SECTION_BREAK---------------------*/  
+.Image
+{
+transition: transform .2s;
+width: 500px;
+}
+.Images
+{
+margin-top:200px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+hr
+{
+width: 100%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Image:hover
+{
+transform: scale(0.92);
+/*---------------------SECTION_BREAK---------------------*/
+}
+.sidenav 
+{
+height: 100%;
+width: 17%;
+overflow-x: hidden;
+background-color: black;
+font-family: 'Times New Roman', Times, serif, sans-serif;
+border-right: 2px solid grey;
+border-top: 2px solid grey ;
+border-bottom: 2px solid grey;     
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a 
+{
+padding: 12px 8px 12px 16px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+display: block;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+font-weight: 900;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark
+{
+padding: 5px;
+background-color: #3d3936;
+color: white;
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark th
+{
+padding-right: 50px;
+border-bottom: solid 1px #737373;
+}/*--------------------SECTION_BREAK---------------------*/
+.table-dark thead
+{
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark td
+{
+padding-left: 15px;
+padding-right: 15px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.np 
+{
+  font-family: 'Courier New', Courier;
+  color: rgb(255, 136, 0);
+}
+/*---------------------SECTION_BREAK---------------------*/
+li:hover
+{
+  transform: scale(1.1);
+}
+/*---------------------SECTION_BREAK---------------------*/
+p
+{
+  color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+a
+{
+  text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage
+{
+float:left;
+width: 350px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage:hover
+{
+transform: scale(0.92);
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myclass{
+width: 30%;
+float: left;
+margin-right: 20px;
+}
+html
+{
+scroll-behavior: smooth;
+}
+.myclass2
+{
+width: 60%;
+font-size: 23.25px;
+transform: scale(1);
+}
+
+img.i{
+  width: 379px;
+  /*height: 199px;*/
+  float: right;
+}    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Banner.png"
+            width="1256.5px" style="margin: -5px;width: 100.7%;">
+        <ul>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">EXTENDED REALITY</a></li>
+            <div class="drpdn">
+                <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html">ARTIFICIAL INTELLIGENCE&nbsp;</a></li>
+
+                <div class="drpdn-content">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#VO_AS" style="border: 2px solid grey;margin-bottom: 2px;">VOICE ASSISTANT</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HU_RO" style="border: 2px solid grey;margin-bottom: 2px;">HUMANOID ROBOTS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HO_CH" style="border: 2px solid grey;margin-bottom: 2px;">
+                        HOLOGRAM CHATS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#AU_PI" style="border: 2px solid grey;margin-bottom: 2px;">AUTO-PILOTS</a>
+                </div>
+            </div>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">SECURITY SYSTEMS</a></li>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">PROJECTED TOUCH</a></li>
+            <li><a href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">WBE/MIND-UPLOADING</a></li>
+
+
+        </ul>
+        <img style="position:absolute; top:444px; left:525.5px; width: 10px;height: 8px; "
+            src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/drpdwn.png">
+    </header>
+    <main>
+        </h1>
+        <div class="col-sm-4">
+            <br>
+            <h5></h5>
+        </div>
+        <div class="col-sm-6" style="width: 60%;float: right;">
+
+        </div>
+
+        <div class="container">
+            <span>
+                <h1 style="text-align:center;">Artificial Intelligence(AI)</h1>
+                <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html"><img
+                        src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/ai%20robot.jpeg"
+                        class="Image"></a>
+            </span>
+            <span>
+                <div style="float: right;width: 52%;">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html" style="text-decoration: none;color: white;">
+                        <p style="font-size: 24.25px; ">
+                            Artificial Intelligence(AI) is intelligence which is a literal simulation of human
+                            intelligence
+                            in a machine.
+                            AI is a pinnacle of human Technology. With AI in machines there is a severe decrease in
+                            errors
+                            that humans make. That is why robots are amazing because they are perfect.
+                            Robots are very active and can work tirelessly for decades without a single error. The Age
+                            of Autopilots has also come, where cars drive on their own which are accident-safe.
+                            <p class=".np" style=" float: right;color: rgb(255, 145, 0);">--> (CLICK TO KNOW MORE)</p>
+                    </a>
+
+                    </p>
+                </div>
+            </span>
+            <br>
+            <div>
+                <span>
+                    <br>
+                    <h1 style="text-align: center;">Extended Reality - AR & VR</h1>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">
+                        <div style="float: left;width: 52%;">
+                            <p style="font-size: 24.25px;" class="ho">
+                                Extended reality (XR) is a term referring to all real-and-virtual combined environments
+                                and
+                                human-machine interactions generated by computer technology. Extended Reality refers to
+                                Augmented Reality(AR) and Virtual Reality(VR).
+                                Virtual Reality (VR) is a computer-generated simulation of a 3D object.
+                                Augmented Reality (AR) is a perfect blend of the digital world and the physical elements
+                                to
+                                create an artificial environment.<span>
+                                    <p class=".np" style="color: rgb(255, 145, 0);float: right;">--> (CLICK TO KNOW
+                                        MORE)
+                                    </p>
+                                </span>
+
+
+
+                            </p>
+                        </div>
+                </span>
+                <br>
+
+                <span>
+                    <img src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/ER-home.jpg"
+                        class="Image" style="margin-left:0px;float: right ;">
+                </span>
+            </div></a>
+
+
+            <h1 style="text-align: center;margin-right: 50px; margin-top: 350px;">Security Systems</h1>
+            <span>
+                <div>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">
+                        <img src="https://tatvaglobalschool.github.io/technologyofthefuture/ADV_Sec_System_Home.jpg" class="Image">
+                        <div class="" style="float: right;width: 52%;">
+                            <p style="font-size: 23.25px;">
+                                A Security System refers to some means to protect our valuables and make our lives
+                                easier
+                                and safer. The Modern and Futuristic Secutity Systems is built in such a way that we are
+                                able to have a full control over our house. It is impossible for any burglar to beat the
+                                mordern security systems. So, to secure families we must implement higher and advanced
+                                security systems in our homes and offices to prevent
+                                Burglaries and Break-ins by robbers.
+
+                            </p>
+                            <p class=".np" style=" float: right;color: rgb(255, 145, 0);">--> (CLICK TO KNOW MORE)</p>
+
+                        </div>
+                    </a>
+            </span>
+        </div>
+        <div>
+            <span>
+                <br>
+                <h1 style="text-align: center;margin-top: 30px;">Projected Touch</h1>
+                <a href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">
+                    <div class="" style="float: left;;width: 52%;">
+                        <p style="font-size: 23.25;">Projected Touch will Definately make our lives a lot easier. It
+                            Enables
+                            us to turn any flat Surface into a touchscreen! A projected capacitve touch is a system,
+                            where
+                            we can just operate something like A touchscreen, with a beam of projected light. We can
+                            easily
+                            give presentations, operate our mobile phones, just with a beam of light. It has relatively
+                            long
+                            life because it has no moving parts in operation. Projected capacitive has high durability
+                        <p class=".np" style=" float: right;color: rgb(255, 145, 0);">--> (CLICK TO KNOW MORE)</p>
+                </a>
+
+                </p>
+        </div>
+        </a>
+        </span>
+        <span>
+            <a href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">
+                <img src="https://tatvaglobalschool.github.io/technologyofthefuture/Projected Touch.png" class="Image" style="margin-left:0px;float: right;"></a>
+        </span>
+        </div>
+        <div>
+            <span>
+                <h1 style="text-align:center;margin-top: 399px;">WBE/Mind-Uploading</h1>
+                <a href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">
+                    <img src="https://tatvaglobalschool.github.io/technologyofthefuture/WBE_Home_Img.jpeg" class="Image">
+            </span>
+            <span>
+                <div class="" style="float: right;margin-right: 0px;width: 52%; ">
+                    <p style="font-size: 23.25px;">
+                        The Whole Brain Emulation(WBE), or Mind-Uploading, Is the Hypothetical process of Copying
+                        Information from brain and storing it in a digital form, or, copying something into brain. It is
+                        mostly used in Dumb, Deaf and Blind People, to transfer what is the thing they wanted to tell or
+                        what they wanted to say, giving them the ability to communicate. This is one of the most useful
+                        innovation to impaired people.</p>
+
+                    <p class=".np" style=" float: right;color: rgb(255, 145, 0);">--> (CLICK TO KNOW MORE)</p></a>
+
+
+                </div>
+            </span>
+        </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

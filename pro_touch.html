@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projected Touch</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/Logo.png"
+        type="image/png" />
+    <style>
+        header ul 
+{
+list-style-type: none;
+overflow: hidden;
+background-color: black;
+margin: -5px;
+margin-top:5px;
+list-style: none;
+border: solid 2px  grey;
+width: 97%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*---------------------SECTION_BREAK---------------------*/
+header li 
+{
+float: left;
+align-items: center;
+background-color: black;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a 
+{
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+li a:hover 
+{
+background-color: #555555;
+cursor: pointer;
+}
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-weight: 600;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Button
+{
+background-color: none;
+border: none;
+color: black;
+height: 20px;
+width: 10%;
+border-radius: 72px;
+margin: 10px;
+border-color: blue;
+border-width: 5px;}
+button:hover{
+background-color: blue;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.dropbtn 
+{
+background-color: black;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn 
+{
+  display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content 
+{
+display: none;
+position: absolute;
+background-color: black;
+min-width: 287px;
+margin-top: 51.5px;
+box-shadow: 0px 8px 16px 0px black;
+z-index: 1;
+margin-left: 210.7px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a 
+{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn-content a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+
+.drpdn:hover .drpdn-content 
+{
+display: block;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.drpdn:hover .dropbtn 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-4
+{
+width: 40%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.col-sm-6
+{
+width: 60%;
+float: right;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.container
+{
+margin-left: 50px;
+margin-right: 50px;
+padding-left: 10px;
+padding-right: 10px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.img-thumbnail
+{
+border-radius: 2px;
+width: 25%;
+height: 10%;
+border: solid 3px white;
+margin: 0.5;  
+}
+/*---------------------SECTION_BREAK---------------------*/  
+.Image
+{
+transition: transform .2s;
+width: 500px;
+}
+.Images
+{
+margin-top:200px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+hr
+{
+width: 100%;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.Image:hover
+{
+transform: scale(0.92);
+/*---------------------SECTION_BREAK---------------------*/
+}
+.sidenav 
+{
+height: 100%;
+width: 17%;
+overflow-x: hidden;
+background-color: black;
+font-family: 'Times New Roman', Times, serif, sans-serif;
+border-right: 2px solid grey;
+border-top: 2px solid grey ;
+border-bottom: 2px solid grey;     
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a 
+{
+padding: 12px 8px 12px 16px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+display: block;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+font-weight: 900;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.sidenav a:hover 
+{
+background-color: grey;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark
+{
+padding: 5px;
+background-color: #3d3936;
+color: white;
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark th
+{
+padding-right: 50px;
+border-bottom: solid 1px #737373;
+}/*--------------------SECTION_BREAK---------------------*/
+.table-dark thead
+{
+border-bottom: solid 1px #737373;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.table-dark td
+{
+padding-left: 15px;
+padding-right: 15px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.np 
+{
+  font-family: 'Courier New', Courier;
+  color: rgb(255, 136, 0);
+}
+/*---------------------SECTION_BREAK---------------------*/
+li:hover
+{
+  transform: scale(1.1);
+}
+/*---------------------SECTION_BREAK---------------------*/
+p
+{
+  color: white;
+}
+/*---------------------SECTION_BREAK---------------------*/
+a
+{
+  text-decoration: none;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage
+{
+float:left;
+width: 350px;
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myimage:hover
+{
+transform: scale(0.92);
+}
+/*---------------------SECTION_BREAK---------------------*/
+.myclass{
+width: 30%;
+float: left;
+margin-right: 20px;
+}
+html
+{
+scroll-behavior: smooth;
+}
+.myclass2
+{
+width: 60%;
+font-size: 23.25px;
+transform: scale(1);
+}
+
+img.i{
+  width: 379px;
+  /*height: 199px;*/
+  float: right;
+}
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <img style="position:absolute; top:768px; right:63px;"
+            src="https://ak.picdn.net/shutterstock/videos/1019581486/thumb/12.jpg"
+            class="i">
+            <img style="position:absolute; top:1074px; right:63px;"
+                src="https://i.pinimg.com/originals/fb/b3/d4/fbb3d4e6f97c913c02d9b3f4188e3ef4.jpg" class="i">
+                            <img style="position:absolute; top:1633px; right:63px;"
+                                src="https://cdn.mos.cms.futurecdn.net/X8ajP3firD9QzBCipfEtPk.jpg" class="i">
+
+
+        <ul>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/arnvr.html">EXTENDED REALITY</a></li>
+            <div class="drpdn">
+                <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html">ARTIFICIAL INTELLIGENCE&nbsp;</a></li>
+
+                <div class="drpdn-content">
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#VO_AS" style="border: 2px solid grey;margin-bottom: 2px;">VOICE ASSISTANT</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HU_RO" style="border: 2px solid grey;margin-bottom: 2px;">HUMANOID ROBOTS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#HO_CH" style="border: 2px solid grey;margin-bottom: 2px;">
+                        HOLOGRAM CHATS</a>
+                    <a href="https://tatvaglobalschool.github.io/technologyofthefuture/ai.html#AU_PI" style="border: 2px solid grey;margin-bottom: 2px;">AUTO-PILOTS</a>
+                </div>
+            </div>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/adv_security.html">SECURITY SYSTEMS</a></li>
+            <li style="border-right: 2px solid grey;"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/pro_touch.html">PROJECTED TOUCH</a></li>
+            <li style="transform: scale(1);"><a href="https://tatvaglobalschool.github.io/technologyofthefuture/wbe.html">WBE/MIND-UPLOADING</a></li>
+
+            <img style="position:absolute; top:32px; left:525.5px; width: 10px;height: 8px; "
+                src="https://raw.githubusercontent.com/TatvaGlobalSchool/technologyofthefuture/main/drpdwn.png">
+        </ul>
+        <a href="https://tatvaglobalschool.github.io/technologyofthefuture/index.html">
+            <p
+                style="padding: 16px;background-color: black;color: white;border: 2px solid grey;background-attachment: fixed;width: 9.8%;float: right;font-size: medium;">
+                BACK TO HOME</p>
+        </a>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <span><u>
+                        <h1 style="margin-left: 400px;" class="myai">Projected Touch</h1>
+                    </u></span>
+                <span>
+                    <h2>1. Projected Touch - What Is It?</h2>
+                </span>
+
+                <span class="myclass">
+
+                    <span style="margin-top: 0px;  font-size: 22.25px;"><img
+                            src="https://cdn.trendhunterstatic.com/thumbs/hachi-infinite.jpeg" width="338px"
+                            height="195px" style="margin-top: 27px;">
+
+                        <p>Projected Touch will Definately make our lives a lot easier. It Enables us to turn any flat
+                            Surface into a touchscreen! Projected Capacitive Technology (PCT) is fast becoming one of
+                            the most prevalent touch technologies
+                        </p>
+                    </span>
+            </div>
+    </main>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p> for an expanding
+            variety of applications ranging from consumer devices to commercial applications in retail, gaming and
+            signage. A
+            projected capacitve touch is a system, where we can just operate something like A touchscreen, with a beam
+            of projected
+            light. We can easily give presentations, operate our mobile phones, just with a beam of light. It has
+            relatively long
+            life because it has no moving parts in operation. Projected capacitive has high durability. Designers of
+            kiosks, industrial PDAs, PoS terminals, digital signage, control panels, and any applications that.</p>
+    </span>
+    <span class="myclass" style="margin-top: 0px;  font-size: 22.25px;">
+        <p>require
+            touchscreen use projected touch. Projected Light Beams do not have any weight so they are easy to access and
+            work on it. Sony is the firrst complany that is looking to develop projected touch as it is currently under
+            development.</p>
+        <img src="https://inteng-storage.s3.amazonaws.com/img/iea/MRw4XQ1Ww1/sizes/holograph-research-mst-2_md.jpg"
+            width="380px" height="200px">
+    </span>
+    <hr>
+    </section>
+    <div class="container">
+        <section class="myclass2">
+            <p><strong>Projected Touch:-</strong></p>
+            <p><strong>Pros:-</strong></p>
+            <p>&nbsp;</p>
+            <ul>
+                <li style="transform: scale(1);"><strong><span>Best user experience</span></strong></li>
+            </ul>
+            <ul>
+                <li style="transform: scale(1);"><span>High touch detection accuracy</span></li>
+            </ul>
+            <ul>
+                <li style="transform: scale(1);"><span>Long-Lasting</span></li>
+            </ul>
+            <ul>
+                <li style="transform: scale(1);"><span>High light transmittance</span></li>
+            </ul>
+            <ul>
+                <li style="transform: scale(1);"><span>Durable</span></li>
+            </ul>
+            <ul>
+                <li style="transform: scale(1);"><span>Multi-touch</span></li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><strong>Cons:-</strong></p>
+            <ul>
+                <li style="transform: scale(1);"><span>Not compatible with gloved touch</span></li>
+                <li style="transform: scale(1);"><span>Higher cost</span></li>
+            </ul>
+            <p>&nbsp;</p>
+
+        </section>
+    </div>
+    <section class="myclass2">
+    
+        <div class="container">
+            <h2><span>Projected Touch:</span></h2>
+            <ol>
+                <li style="transform: scale(1);"><span>There are two types of sensing methods in
+                        projected capacitive technology. They are GRID type and wire sensing type. GRID type will be
+                        introduced here.</span></li>
+                <li style="transform: scale(1);"><span>Human body is conductive since it contains a
+                        lot
+                        of water. When a finger comes close to the patterning of X and Y electrodes, a capacitance
+                        coupling will occur between the finger and the electrodes. The capacitance coupling makes the
+                        electrostatic capacitance between the X and Y electrodes change. The touch sensor detects
+                        touched points as it checks where on the electrode lines the electrostatic capacitance
+                        changed.</span></li>
+            </ol>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
